@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/628082f214.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header" >
+        <div class = "container">
+            <nav>
+                <img src="MYLOGO.png" class="logo">
+                <!-- <h1>Vedansh</h1> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fa-fade" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web/Java Developer</p>
+                <h1>Hi, I'm <span>Vedansh</span><br>Tiwari From<br>India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Profile2.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Vedansh , a web and Java developer with 5-star gold badges <br> in Java and Python on HackerRank.
+                    crafting engaging web experiences and building robust Java applications are my passions.
+                    For me, coding is an art of innovation that thrives in every project.
+                        
+                        Beyond the screen, I'm an avid tech trend follower and outdoor enthusiast.
+                        
+                        Explore my portfolio to see my commitment to excellence in action.
+                        
+                        Let's collaborate on your next project and create something extraordinary together.
+                        
+                        <br> Cheers,
+                        <br> Vedansh Tiwari
+                        
+                        
+                        
+                        
+                        
+                        </p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Great problem solving skills </li>
+                            <li><span>Web Development</span><br>Web app Development </li>
+                            <li><span>Python</span><br>Great problem solving skills </li>
+
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>HOSPITAL MANAGEMENT SYSTEM</span><br>Hospital Management System(Java) This project can be
+                                used to manage records of doctor, patient and medicine present in a
+                                hospital. Also, doctor’s appointments and treatment can also be set.Use
+                                as an application for the multipurpose work of a hospital.
+                                </li>
+
+                            <li><span>VIRTUAL ASSISTANT</span><br>AI Virtual Assistant(Python) It is my personal desktop
+                                assistant which I build in Python. It takes several commands from me as
+                                a voice and performs the task. Still its capable of doing 50+ different
+                                tasks like telling us Weather and News,Playing music,taking
+                                Screenshot,launching an application ect.</li>
+
+                            <li><span>SNAKE GAME</span><br>Snake Game(Python) Using Pygame Module in Python.</li>
+
+                            <li><span>TIN DOG WEBSITE</span><br>A fully responsive website of find(purchase) a perfect match for your Dog.</li>
+
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Present</span><br>MCA form VIT Bhopal</li>
+                            <li><span>2019-2022</span><br>BCA from MCMT Varanasi</li>
+                            <li><span>2017-2019</span><br>12th from SDIC Varanasi</li>
+
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------services------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Achivements</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Passionate about cooding in Java.
+                    <br>More than 5 projects.
+                    <br>Certified on HackerRank-Java Basics.
+                    <br>⭐⭐⭐⭐⭐ in Java HackerRank.
+                    <br>⭐⭐⭐⭐⭐ in Java #30DaysOfCodeChallange on HackerRank.
+                    </p>
+                           <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Passionate about cooding in Java.
+                        <br>More than 8 projects.
+                        <br>Certified on HackerRank-Python Basics.
+                        <br>⭐⭐⭐⭐⭐ in Python HackerRank.
+                        <br>⭐⭐⭐⭐⭐ in Puthon #30DaysOfCodeChallange on HackerRank.
+                        Virtual AI Assistant using Pyhton3.
+                        </p>
+                           <a href="#">Learn more </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------Portfolio----------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Python Virtual Assistant</h3>
+                        <p>AI Virtual Assistant(Python) It is my personal desktop
+                            assistant which I build in Python. It takes several commands from me as
+                            a voice and performs the task. Still its capable of doing 50+ different
+                            tasks like telling us Weather and News,Playing music,taking
+                            Screenshot,launching an application ect.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>TIN DOG WEBSITE</h3>
+                        <p>A fully responsive website of find(purchase) a perfect match for your Dog
+                            .</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>SNAKE GAME</h3>
+                        <p>Snake Game(Python) Using Pygame Module in Python.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------------------------contact------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titel">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> vt2855028@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7521932472</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vedansh-tiwari/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Resume.pdf.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name = "Name" placeholder="Your Name" required>
+                        <input type="text" name = "email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Er. Vedansh.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+        
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
